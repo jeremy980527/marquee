@@ -42,7 +42,7 @@ body {
 
 /* 改變字的 UI，始終顯示 */
 #changeTextUI {
-    margin-top: 40px; /* 向下移動位置 */
+    margin-top: 20px; /* 向下移動位置 */
     display: flex;
     flex-direction: row; /* 將輸入區和按鈕並排顯示 */
     gap: 10px;
@@ -52,19 +52,21 @@ body {
 
 /* 設置輸入框樣式 */
 #newTextInput {
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 8px;
+    font-size: 0.9em; /* 調整字體大小以適應屏幕 */
     color: white;
     background-color: black; /* 輸入框背景變黑 */
     border: 2px solid #fff; /* 白色邊框 */
     border-radius: 5px;
-    width: 300px;
+    width: 150px; /* 調整輸入框寬度 */
+    max-width: 100%; /* 讓輸入框在小屏幕上自適應 */
+    box-sizing: border-box; /* 包括邊框和內邊距在內的總寬度 */
 }
 
 /* 設置應用按鈕樣式 */
 #applyTextButton {
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 8px 16px;
+    font-size: 0.9em; /* 調整字體大小以適應屏幕 */
     color: white;
     background-color: black; /* 按鈕背景變黑 */
     border: 2px solid #fff; /* 白色邊框 */
@@ -74,22 +76,24 @@ body {
 
 /* 設置字形選擇列表樣式 */
 #fontSelect {
-    padding: 10px;
-    font-size: 1.2em;
+    padding: 8px;
+    font-size: 0.9em; /* 調整字體大小以適應屏幕 */
     background-color: black; /* 列表背景變黑 */
     color: white; /* 列表文字顏色 */
     border: 2px solid #fff; /* 白色邊框 */
     border-radius: 5px;
+    max-width: 150px; /* 調整選擇列表的寬度 */
 }
 
 /* 隱藏顯示按鈕樣式 */
 #toggleUIButton {
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 8px 16px;
+    font-size: 0.9em; /* 調整字體大小以適應屏幕 */
     color: white;
     background-color: black; /* 按鈕背景變黑 */
     border: 2px solid #fff; /* 白色邊框 */
     border-radius: 5px;
     cursor: pointer;
 }
+
