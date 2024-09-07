@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跑馬燈效果</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="marquee">
+        <span id="marqueeText">這是黑色漸層背景的跑馬燈效果！</span>
+    </div>
+
+    <!-- 隱藏顯示按鈕 -->
+    <button id="toggleUIButton">隱藏/顯示 設定</button>
+
+    <!-- 改變字的 UI -->
+    <div id="changeTextUI">
+        <input type="text" id="newTextInput" placeholder="輸入新的文字">
+        <button id="applyTextButton">應用</button>
+
+        <!-- 字形選擇列表 -->
+        <select id="fontSelect">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="'Microsoft JhengHei'">微軟正黑體</option>
+            <option value="'SimSun'">宋體</option>
+            <option value="'Microsoft YaHei'">微软雅黑</option>
+            <option value="'Noto Sans SC'">思源黑體</option>
+        </select>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

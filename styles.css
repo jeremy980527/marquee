@@ -1,0 +1,95 @@
+/* 設置全頁背景為黑色漸層 */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #000, #333); /* 黑色到灰色的背景漸層 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 設置字框背景和跑馬燈效果 */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(to right, #444, #111); /* 字框內部漸層：灰色到深黑色 */
+    padding: 10px 0;
+    border-radius: 10px; /* 讓字框有圓角 */
+}
+
+/* 設置字體樣式和動畫 */
+.marquee span {
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    padding: 20px 0;
+    animation: marquee 10s linear infinite;
+}
+
+/* 跑馬燈動畫，從左到右 */
+@keyframes marquee {
+    from {
+        transform: translateX(-100%); /* 從畫面左邊外開始 */
+    }
+    to {
+        transform: translateX(100vw); /* 滑動到畫面右邊外 */
+    }
+}
+
+/* 改變字的 UI，始終顯示 */
+#changeTextUI {
+    margin-top: 40px; /* 向下移動位置 */
+    display: flex;
+    flex-direction: row; /* 將輸入區和按鈕並排顯示 */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 設置輸入框樣式 */
+#newTextInput {
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    background-color: black; /* 輸入框背景變黑 */
+    border: 2px solid #fff; /* 白色邊框 */
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* 設置應用按鈕樣式 */
+#applyTextButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: black; /* 按鈕背景變黑 */
+    border: 2px solid #fff; /* 白色邊框 */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 設置字形選擇列表樣式 */
+#fontSelect {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: black; /* 列表背景變黑 */
+    color: white; /* 列表文字顏色 */
+    border: 2px solid #fff; /* 白色邊框 */
+    border-radius: 5px;
+}
+
+/* 隱藏顯示按鈕樣式 */
+#toggleUIButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: black; /* 按鈕背景變黑 */
+    border: 2px solid #fff; /* 白色邊框 */
+    border-radius: 5px;
+    cursor: pointer;
+}
